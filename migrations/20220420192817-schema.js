@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports = {
   async up(queryInterface, Sequelize) {
     var sql_string = fs.readFileSync('schema.sql', 'utf8');
-    const sequelize = new Sequelize('doctor_appointment', 'root', '4456', {
+    const sequelize = new Sequelize('doctor_appointment', 'root', 'foobar@123', {
       host: 'localhost',
       dialect: 'mysql',
       dialectOptions: {
